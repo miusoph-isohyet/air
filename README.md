@@ -12,51 +12,51 @@
 
       
    # Arithmetic Intermediate Representation
-Let all household items (🪥, 🛁, etc.) be challenges, concretely evaluation points, supplied by the verifier. Let all fruit & vegetables (🥝, 🥥, etc.) be challenges, concretely weights to compress rows, supplied by the verifier. Both types of challenges are X-field elements, i.e., elements of <img src="base64"></img>.
+Let all household items (🪥, 🛁, etc. ) be challenges, concretely evaluation points, supplied by the verifier.  Let all fruit & vegetables (🥝, 🥥, etc. ) be challenges, concretely weights to compress rows, supplied by the verifier.  Both types of challenges are X-field elements, i. e. , elements of <img src="base64"></img>. 
 
   # Initial Constraints
-1.The Address is 0.<br>
-2The IndexInChunk is 0.<br>
-3.The indicator IsHashInputPadding is 0.<br>
-4.The InstructionLookupServerLogDerivative is 0.<br>
-5.PrepareChunkRunningEvaluation has absorbed Instruction with respect to challenge 🪑.<br>
-6.SendChunkRunningEvaluation is 1.<br>
-7.Initial Constraints as Polynomials<br>
-8.Address<br>
-9.IndexInChunk<br>
-10.IsHashInputPadding<br>
-11.InstructionLookupServerLogDerivative<br>
-12.PrepareChunkRunningEvaluation - 🪑 - Instruction<br>
-13.SendChunkRunningEvaluation - 1<br>
+1. The Address is 0. <br>
+2The IndexInChunk is 0. <br>
+3. The indicator IsHashInputPadding is 0. <br>
+4. The InstructionLookupServerLogDerivative is 0. <br>
+5. PrepareChunkRunningEvaluation has absorbed Instruction with respect to challenge 🪑. <br>
+6. SendChunkRunningEvaluation is 1. <br>
+7. Initial Constraints as Polynomials<br>
+8. Address<br>
+9. IndexInChunk<br>
+10. IsHashInputPadding<br>
+11. InstructionLookupServerLogDerivative<br>
+12. PrepareChunkRunningEvaluation - 🪑 - Instruction<br>
+13. SendChunkRunningEvaluation - 1<br>
   # Consistency Constraints
-1.The MaxMinusIndexInChunkInv is zero or the inverse of rate−1− IndexInChunk.<br>
-2.The IndexInChunk is rate−1 or the MaxMinusIndexInChunkInv is the inverse of rate−1− IndexInChunk.<br>
-3.Indicator IsHashInputPadding is either 0 or 1.<br>
-4.Indicator IsTablePadding is either 0 or 1.<br>
+1. The MaxMinusIndexInChunkInv is zero or the inverse of rate−1− IndexInChunk. <br>
+2. The IndexInChunk is rate−1 or the MaxMinusIndexInChunkInv is the inverse of rate−1− IndexInChunk. <br>
+3. Indicator IsHashInputPadding is either 0 or 1. <br>
+4. Indicator IsTablePadding is either 0 or 1. <br>
   # Consistency Constraints as Polynomials
-1.(1 - MaxMinusIndexInChunkInv · (rate - 1 - IndexInChunk)) · MaxMinusIndexInChunkInv<br>
-2.(1 - MaxMinusIndexInChunkInv · (rate - 1 - IndexInChunk)) · (rate - 1 - IndexInChunk)<br>
-2.IsHashInputPadding · (IsHashInputPadding - 1)<br>
-3.IsTablePadding · (IsTablePadding - 1)<br>
+1. (1 - MaxMinusIndexInChunkInv · (rate - 1 - IndexInChunk)) · MaxMinusIndexInChunkInv<br>
+2. (1 - MaxMinusIndexInChunkInv · (rate - 1 - IndexInChunk)) · (rate - 1 - IndexInChunk)<br>
+2. IsHashInputPadding · (IsHashInputPadding - 1)<br>
+3. IsTablePadding · (IsTablePadding - 1)<br>
   # Transition Constraints
-1.The Address increases by 1.<br>
-2.If the IndexInChunk is not rate−1, it increases by 1. Else, the IndexInChunk in the next row is 0.<br>
-3.The indicator IsHashInputPadding is 0 or remains unchanged.<br>
-4.The padding indicator IsTablePadding is 0 or remains unchanged.<br>
-5.If IsHashInputPadding is 0 in the current row and 1 in the next row, then Instruction in the next row is 1.<br>
-6.If IsHashInputPadding is 1 in the current row then Instruction in the next row is 0.<br>
-7.If IsHashInputPadding is 1 in the current row and IndexInChunk is rate−1 in the current row then IsTablePadding is 1 in the next row.<br>
-8.If the current row is not a padding row, the logarithmic derivative accumulates the current row's address, the current row's instruction, and the next row's instruction with respect to challenges 🥝, 🥥, and 🫐 and indeterminate 🪥 respectively. Otherwise, it remains unchanged.<br>
-9.If the IndexInChunk in the current row is not rate−1, then PrepareChunkRunningEvaluation absorbs the Instruction in the next row with respect to challenge 🪑. Otherwise, PrepareChunkRunningEvaluation resets and absorbs the Instruction in the next row with respect to challenge 🪑.<br>
-10.If the next row is not a padding row and the IndexInChunk in the next row is rate−1, then SendChunkRunningEvaluation absorbs PrepareChunkRunningEvaluation in the next row with respect to variable 🪣. Otherwise, it remains unchanged.<br>
+1. The Address increases by 1. <br>
+2. If the IndexInChunk is not rate−1, it increases by 1.  Else, the IndexInChunk in the next row is 0. <br>
+3. The indicator IsHashInputPadding is 0 or remains unchanged. <br>
+4. The padding indicator IsTablePadding is 0 or remains unchanged. <br>
+5. If IsHashInputPadding is 0 in the current row and 1 in the next row, then Instruction in the next row is 1. <br>
+6. If IsHashInputPadding is 1 in the current row then Instruction in the next row is 0. <br>
+7. If IsHashInputPadding is 1 in the current row and IndexInChunk is rate−1 in the current row then IsTablePadding is 1 in the next row. <br>
+8. If the current row is not a padding row, the logarithmic derivative accumulates the current row's address, the current row's instruction, and the next row's instruction with respect to challenges 🥝, 🥥, and 🫐 and indeterminate 🪥 respectively.  Otherwise, it remains unchanged. <br>
+9. If the IndexInChunk in the current row is not rate−1, then PrepareChunkRunningEvaluation absorbs the Instruction in the next row with respect to challenge 🪑.  Otherwise, PrepareChunkRunningEvaluation resets and absorbs the Instruction in the next row with respect to challenge 🪑. <br>
+10. If the next row is not a padding row and the IndexInChunk in the next row is rate−1, then SendChunkRunningEvaluation absorbs PrepareChunkRunningEvaluation in the next row with respect to variable 🪣.  Otherwise, it remains unchanged. <br>
 
   # For each table, <b>up to</b> four lists containing constraints of different type are given:
 
 Initial Constraints, defining values in a table's first row,
 Consistency Constraints, establishing consistency within any given row,
 Transition Constraints, establishing the consistency of two consecutive rows in relation to each other, and
-Terminal Constraints, defining values in a table's last row.
-Together, all these constraints constitute the AIR constraints.
+Terminal Constraints, defining values in a table's last row. 
+Together, all these constraints constitute the AIR constraints. 
    <table>   
     <thead>
      <tr>
