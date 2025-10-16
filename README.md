@@ -1,9 +1,4 @@
-## Arithmetic Intermediate Representation
-
-
-
-      
-   # Arithmetic Intermediate Representation
+# Arithmetic Intermediate Representation
 Let all household items (🪥, 🛁, etc. ) be challenges, concretely evaluation points, supplied by the verifier.  Let all fruit & vegetables (🥝, 🥥, etc. ) be challenges, concretely weights to compress rows, supplied by the verifier.  Both types of challenges are X-field elements, i. e. , elements of <img src="base64"></img>. 
 
   # Initial Constraints
