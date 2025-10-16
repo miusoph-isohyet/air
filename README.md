@@ -1,14 +1,6 @@
-# Arithmetic Intermediate Representation
+## Arithmetic Intermediate Representation
 
-<tr><td style="text-align: right">n</td><td style="text-align: right">n</td><td style="text-align: right">n</td><td style="text-align: right">12</td></tr>
-<tr><td style="text-align: right">n</td><td style="text-align: right">n</td><td style="text-align: right">y</td><td style="text-align: right">10</td></tr>
-<tr><td style="text-align: right">n</td><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">11</td></tr>
-<tr><td style="text-align: right">n</td><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">3</td></tr>
-<tr><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">n</td><td style="text-align: right">6</td></tr>
-<tr><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">y</td><td style="text-align: right">0</td></tr>
-<tr><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">4</td></tr>
-<tr><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">0</td></tr>
-</tbody>
+
 
       
    # Arithmetic Intermediate Representation
@@ -69,3 +61,12 @@ Together, all these constraints constitute the AIR constraints.
    </thead>
    <tbody>
 <tbody>
+<tr><td style="text-align: right">n</td><td style="text-align: right">n</td><td style="text-align: right">n</td><td style="text-align: right">12</td></tr>
+<tr><td style="text-align: right">n</td><td style="text-align: right">n</td><td style="text-align: right">y</td><td style="text-align: right">10</td></tr>
+<tr><td style="text-align: right">n</td><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">11</td></tr>
+<tr><td style="text-align: right">n</td><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">3</td></tr>
+<tr><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">n</td><td style="text-align: right">6</td></tr>
+<tr><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">y</td><td style="text-align: right">0</td></tr>
+<tr><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">4</td></tr>
+<tr><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">0</td></tr>
+</tbody>
