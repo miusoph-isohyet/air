@@ -13,7 +13,7 @@ Together, all these constraints constitute the AIR constraints.
       </th>
       <th style=text-align: right">HasArg
       </th>
-      <th style="text-align: right">NumOpcodes</th> == $0
+      <th style="text-align: right">NumOpcodes</th>
      </tr>
    </thead>
    <tbody>
