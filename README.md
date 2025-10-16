@@ -27,15 +27,12 @@ Together, all these constraints constitute the AIR constraints.
 <tr><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">n</td><td style="text-align: right">4</td></tr>
 <tr><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">y</td><td style="text-align: right">0</td></tr>
 </tbody>
-Arithmetic Intermediate Representation
-Let all household items (🪥, 🛁, etc.) be challenges, concretely evaluation points, supplied by the verifier. Let all fruit & vegetables (🥝, 🥥, etc.) be challenges, concretely weights to compress rows, supplied by the verifier. Both types of challenges are X-field elements, i.e., elements of F 
-p 
-3
- 
-​
- .
 
-Initial Constraints
+      
+   # Arithmetic Intermediate Representation
+Let all household items (🪥, 🛁, etc.) be challenges, concretely evaluation points, supplied by the verifier. Let all fruit & vegetables (🥝, 🥥, etc.) be challenges, concretely weights to compress rows, supplied by the verifier. Both types of challenges are X-field elements, i.e., elements of <img src="base64"></img>.
+
+  # Initial Constraints
 The Address is 0.
 The IndexInChunk is 0.
 The indicator IsHashInputPadding is 0.
